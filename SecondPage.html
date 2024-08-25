@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Page</title>
+
+
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('\rm378-07.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    nav {
+        background-color: pink;
+        color: black;
+        padding: 1px 0px;
+        font-family: calibri;
+    }
+
+    nav ul {
+        padding-left: 0px;
+    }
+
+    nav ul li {
+        list-style: none;
+        display: inline;
+        padding: 16px 184px;
+        font-size: 30px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    #form {
+        background-color: rgb(108, 181, 255);
+        border: 2px solid rgb(2, 101, 200);
+    }
+
+    form {
+        margin: 20px;
+        padding: 5px;
+        font-family: sans-serif;
+        background-color: beige;
+        border-radius: 25px;
+    }
+
+    fieldset {
+        padding-left: 20px;
+        margin: 10px 15px;
+        border-radius: 25px;
+    }
+
+    small {
+        padding-left: 10px;
+    }
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="\index.html">Home</a></li>
+            <li id="form"><a href="\SecondPage.html"><b>Form</b></a></li>
+            <li><a href="\3rdpage.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+    <form>
+        <fieldset>
+            <legend>
+                <h1>Student Form [Web Engineering]</h1>
+            </legend>
+
+            Your Name:
+            <input type="text" placeholder="First Name" required> 
+
+            <br>
+            <br>
+
+            Father's Name:
+            <input type="text" placeholder="Last Name" required>
+
+            <br>
+            <br>
+
+
+            Roll Number:
+            <input type="text" placeholder="Roll no." required>
+
+            <br>
+            <br>
+
+            Email:
+            <input type="email" placeholder="you123@gmail.com" required>
+
+            <br>
+            <br>
+
+            Date-of-Birth:
+            <input type="date">
+
+            <br>
+            <br>
+
+            Gender:
+
+            <input type="radio" id="rd1" name="gender">
+            <label for="rd1" class="awm">Male</label>
+
+            <input type="radio" id="rd2" name="gender">
+            <label for="rd2" class="awm">Female</label>
+
+            <br>
+            <br>
+
+            Interests:
+
+            <input type="checkbox" id="cb1" name="interest">
+            <label for="cb1" class="awm">HTML</label>
+
+            <input type="checkbox" id="cb2" name="interest">
+            <label for="cb2" class="awm">CSS</label>
+
+            <input type="checkbox" id="cb3" name="interest">
+            <label for="cb3" class="awm">Javascript</label>
+
+            <br>
+            <br>
+
+            <label for="ddl">Department: </label>
+            <select name="drop" id="ddl">
+                <option value="Choose" selected>---Choose Your Department---</option>
+
+                <optgroup label="IT dept">
+                    <option value="BS SE">BS Software Engineering</option>
+                    <option value="BS CS">BS Computer Science</option>
+                    <option value="BS IT">BS Information Technology</option>
+                    <option value="MS SE">MS Software Engineering</option>
+                    <option value="MS CS">MS Computer Science</option>
+                    <option value="MS IT">MS Information Technology</option>
+                </optgroup>
+
+                <optgroup label="Law">
+                    <option value="LLB">LLB (5 years)</option>
+                </optgroup>
+
+                <optgroup label="Banking & Finance">
+                    <option value="BBA BF">BBA Banking & Finance</option>
+                    <option value="BBA IRM">BBA Insurance & Risk Management</option>
+                </optgroup>
+
+                <optgroup label="Business Administration">
+                    <option value="BBA hons">BBA (Hons.)</option>
+                    <option value="MBA">MBA (Hons.)</option>
+                    <option value="MP BA">M.Phil Business Administration</option>
+                    <option value="Phd BA">PH.D Business Administration</option>
+                </optgroup>
+
+                <optgroup label="English Dept">
+                    <option value="BS Eng">BS English</option>
+                    <option value="MP Eng">M.Phil English</option>
+                    <option value="PHD Eng">PH.D English</option>
+                </optgroup>
+
+                <optgroup label="Commerce">
+                    <option value="BS AF">BS Accounting & Finance</option>
+                    <option value="BS Com">BS Commerce</option>
+                    <option value="BS E-Com">BS E-Commerce</option>
+                </optgroup>
+            </select> 
+            <small>*This refers to the department in which you're currently studying.</small>
+
+            <br>
+            <br>
+
+            <input type="checkbox" id="agree" required>
+            <label for="agree">By checking this checkbox, I agree to be a regular student and give my best possible
+                effort.</label>
+
+            <br>
+            <br>
+
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset all">
+
+            <br>
+            <br>
+        </fieldset>
+        <br>
+    </form>
+</body>
+
+</html>
